@@ -1,0 +1,114 @@
+html,
+body {
+    height: 100vh;
+    background-color: #e9e6e6;
+    /* BG Gri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.form-container a:hover {
+  text-decoration: none;   
+    color: #9f00e9;
+}
+
+.form-container {
+  position: fixed;
+/* Beyaz bir background-color ayarlayın.
+◦ İçeriden boşluk vermek için padding kullanın.
+◦ Köşeleri yumuşatmak için border-radius ekleyin.
+◦ Kutuyu sayfadan ayırmak için box-shadow ile hafif bir gölge verin. */
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Giriş Yap" ve "Hesap Oluştur" ana başlıklarının yazı tipini ve rengini değiştirin.
+• Form altındaki "Hesabın yok mu? Kayıt Ol" gibi linklerin altındaki çizgiyi kaldırın ve
+rengini değiştirin.  */
+h1
+ {
+    font-family: 'Papyrus', fantasy; 
+    
+    /* fonts.google.com adresinden seçeceğiniz bir yazı tipini projenize ekleyerek
+başlıklarınızda kullanın. */
+    color: #9f00e9;
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}
+
+/* Arka plan rengini (background-color) ve yazı rengini (color) değiştirin.
+◦ Varsayılan kenarlığı (border) kaldırın.
+◦ Butonun üzerine gelince imlecin el işareti olmasını sağlayın. */
+
+button[type="submit"] {
+    background-color: #ffc0cb;
+    color: #db8f8f;
+    border: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+     /* Farenizle butonun üzerine geldiğinizde arka plan renginin hafifçe değişmesini
+sağlayın. */
+    transition: background 0.2s;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #cc9da5;
+}
+
+/* Genişliklerini %100 yaparak kutuya tam yayılmalarını sağlayın.
+◦ padding ile içten boşluk vererek daha okunaklı hale getirin.
+◦ margin-bottom ile her bir input'un altına boşluk bırakarak birbirlerine
+yapışmalarını engelleyin.
+◦ border stillerini değiştirerek daha modern bir görünüm kazandırın. */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: none;
+  background-color: #fff6f8;
+  outline: 2px solid #e0e0e0;
+  transition: outline-color 0.2s;
+  box-shadow: 0 1px 4px rgba(209,159,233,0.08);
+}
+
+/* • Bir input alanına tıklandığında kenarlık renginin (border-color) belirginleşmesini  */
+
+input:focus {
+    border-color: #9f00e9;
+    outline: none;
+    box-shadow: 0 0 5px #9f00e9;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #2b9915;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
